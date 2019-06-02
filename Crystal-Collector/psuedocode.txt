@@ -1,0 +1,51 @@
+Crystal Collector
+
+-Rules:
+    -The game should start with a random number between 19-120
+        -This is the score in which the player should match
+    -The game should have 3 crystals with random values from 1-12
+        -These values will be hidden
+
+-Code:
+    -Import other files to index.html
+    -If JQuery is to be used, that needs to be imported as well
+
+    -Create a box to house the first random number which the player needs to guess to
+    -Create a second box to record the players' guesses
+    -Create 3 buttons with the second random numbers attached (1-12)
+        -Hide the value of the buttons from the player
+    
+    -In order to make the random numbers:
+        - Math.floor(Math.random(19-120) + 1)
+            -This should be used for the first random number
+        -Math.floor(Math.random(1-12) + 1)
+            -This should be used for the second random number
+            -We will need to create 3 random numbers for the buttons
+        -Functions can be used in order to make these numbers
+
+    -Once the numbers are created:
+        -The first random number should be displayed in the first box created
+        -Dom manipulation can be used here
+            -The random number should take over the html property inside of the box
+                -JQuery
+                    -$("#boxOne).text(randomNumberFunction());
+                -JS
+                    -document.getelementbyid("boxOne").... etc.
+            -The user guess should be recorded in the second box
+                -Guesses: g1, g2, g3...gx
+                -Record guesses: guessTotal
+                -guessTotal = guessTotal + gx
+                -Display the guessTotal
+                -JQuery
+                    -$("#boxTwo).text(guessTotal);
+                -JS
+                    -document.getelementbyid("boxTwo).... etc.
+    -Implementing game logic:
+        -The var guessTotal must be compared to the target (first random number)
+        -If the guessTotal > the target, the game ends. No points issued, the game resets.
+        -If guessTotal < target, the player must continue until another condition is met
+        -If guessTotal = target, the player receives a point. The game resets.
+        -There should be several vars to record progress
+            -Wins
+            -Losses
+        -These vars can be displayed on the page as well.

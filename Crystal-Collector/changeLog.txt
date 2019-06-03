@@ -1,0 +1,15 @@
+6-2-2019 v0.01 (Crystal Collector)
+-Added:
+    -index.html
+    -logic.js
+    -style.css
+    -psuedocode.txt
+    -changelog.txt
+
+    -index.html
+        -Initialized document
+        -Imported logic.js
+    -Logic.js
+        -Created randomTarget
+        -Created randomGuess
+        -Logged these to verify funcitonality

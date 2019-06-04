@@ -1,3 +1,12 @@
+6-3-2019 v0.02 (Crystal Collector)
+-Added:
+    -Random target now displays on the HTML document
+    -Created buttons for the random values
+    -Added an attribute of value to the buttons
+        -Each button generates a different value
+    -The 2nd box for the guess total now displays the total guesses correctly
+    
+---------------------------------------------------------------------------------------------------
 6-2-2019 v0.01 (Crystal Collector)
 -Added:
     -index.html

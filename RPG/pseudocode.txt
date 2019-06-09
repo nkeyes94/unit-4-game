@@ -1,0 +1,22 @@
+-Objective: Create a game that allows for text based combat
+-Create:
+    -Characters (As objects)
+        -Objects:
+            -Health, experience, stamina, weapon
+    
+-Have 2 different characters fight
+    -Health should be adjusted by the weapon damage
+    -Experience should be adjusted per character defeated
+    -Stamina will be adjusted during combat periods
+    -Weapon:
+        -Allow for different weapons to be in the game with different damages
+    
+-Start with the player selecting a character, or defining their own
+-After a character is made, have them fight an opponent to increase experience and unlock other fights
+-There should be a loop for combat
+    -While(player.health > 0 || enemy.health > 0){
+        combat
+    }
+
+-Combat should be diverse
+    -Now I am getting too ahead of myself. 

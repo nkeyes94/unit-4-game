@@ -1,11 +1,13 @@
+$(document).ready(function(){
+
 // Function to create the random target
 var randomT;
 
 function randomTarget(){
-    var tester = document.getElementById("tester");
+    // var tester = document.getElementById("tester");
+    var tester = $("#tester");
     randomT = Math.floor(Math.random() * (120 - 19) + 19) + 1;
-    // tester.replaceWith(randomT);
-    tester.innerHTML=randomT;
+    tester.html(randomT);
 }
 randomTarget();
 
@@ -17,25 +19,25 @@ function randomGuess(){
 //Function to reset the two boxes after a victory or defeat
 function boxReset(){
     guessTotal = 0;
-    secondTester.innerHTML=guessTotal;
+    secondTester.html(guessTotal);
     randomTarget();
 }
 
 //First button config
-var firstButton = document.getElementById("firstButton");
+var firstButton = $("#firstButton");
 firstButton = {value:randomGuess()};
 //Second button config
-var secondButton = document.getElementById("secondButton");
+var secondButton = $("#secondButton");
 secondButton = {value:randomGuess()};
 //Third button config
-var thirdButton = document.getElementById("thirdButton");
+var thirdButton = $("#thirdButton");
 thirdButton = {value:randomGuess()};
 //Fourth button config
-var fourthButton = document.getElementById("fourthButton");
+var fourthButton = $("#fourthButton");
 fourthButton = {value:randomGuess()};
 //Initial box 2 config
 var guessTotal = 0;
-var secondTester = document.getElementById("secondTester");
+var secondTester = $("#secondTester");
 //Setting variables for WR and LR
 var winRate = 0;
 var lossRate = 0;
@@ -43,17 +45,17 @@ var lossRate = 0;
 //Function to increase win rate
 function increaseWinRate(){
     winRate = winRate + 1;                                  //Increase win rate by 1
-    document.getElementById("win").innerHTML=winRate;                             //Display win rate
+    $("#win").html(winRate);                             //Display win rate
 }
 
 function increaseLossRate(){
     lossRate = lossRate + 1;
-    document.getElementById("lose").innerHTML=lossRate;
+    $("#lose").html(lossRate);
 }
 //Config for the first button.
 function oneBtn(){
     guessTotal = guessTotal + firstButton.value;                //Totaling the guess total
-    secondTester.innerHTML=guessTotal;                          //Displaying the guess total
+    secondTester.html(guessTotal);                          //Displaying the guess total
     console.log(guessTotal);                                    //Logging the guess total
 
     if(guessTotal == randomT){                                  //If the guess total equals target...
@@ -68,10 +70,11 @@ function oneBtn(){
         boxReset();                                             //...reset the box
     }                                                           //This is repeated for btns 2 & 3
 }
+$("#firstGuess").click(oneBtn);
 
 function twoBtn(){
     guessTotal = guessTotal + secondButton.value;
-    secondTester.innerHTML=guessTotal;
+    secondTester.html(guessTotal);
     console.log(guessTotal);
 
     if(guessTotal == randomT){
@@ -86,10 +89,11 @@ function twoBtn(){
         boxReset();
     }
 }
+$("#secondGuess").click(twoBtn);
 
 function threeBtn(){
     guessTotal = guessTotal + thirdButton.value;
-    secondTester.innerHTML=guessTotal;
+    secondTester.html(guessTotal);
     console.log(guessTotal);
 
     if(guessTotal == randomT){
@@ -104,10 +108,11 @@ function threeBtn(){
         boxReset();
     }
 }
+$("#thirdGuess").click(threeBtn);
 
 function fourBtn(){
     guessTotal = guessTotal + fourthButton.value;
-    secondTester.innerHTML=guessTotal;
+    secondTester.html(guessTotal);
     console.log(guessTotal);
 
     if(guessTotal == randomT){
@@ -122,6 +127,7 @@ function fourBtn(){
         boxReset();
     }
 }
+$("#fourthGuess").click(fourBtn);
 
 console.log(winRate + " WR");
 console.log(lossRate + " LR");
@@ -131,3 +137,5 @@ console.log(secondButton.value + " 2 btn value");
 console.log(thirdButton.value + " 3 btn value");
 console.log(fourthButton.value + " 4 btn value");
 console.log(randomGuess());
+
+});

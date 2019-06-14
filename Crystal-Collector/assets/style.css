@@ -1,0 +1,31 @@
+#firstGuess{
+    background-image: url(crystal-green.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+#secondGuess{
+    background-image: url(crystal-red.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+#thirdGuess{
+    background-image: url(crystal-blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+#fourthGuess{
+    background-image: url(crystal-purple.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}

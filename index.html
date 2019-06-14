@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal collector</title>
+    <!--Linking stylesheet-->
+    <link rel="stylesheet" type="text/css" href="Crystal-Collector/assets/style.css">
+    <!-- Linking jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</head>
+<!--Start of the body-->
+<body>
+    <div id="pageContainer">                <!--Page container for formatting-->
+
+        <div id="heading">                  <!--Page heading-->
+            <h1>Crystal Collector</h1>
+        </div>                              <!--End of the heading-->
+
+        <div>
+            <p>Number to guess:</p>
+        </div>
+
+        <div id="firstBox">                 <!--First box for storing the random target-->
+            <p id="tester">test</p>
+        </div>
+
+        <div>
+            <p>Your guess total:</p>
+        </div>
+
+        <div id="secondBox">                <!--Second box for storing the random guesses-->
+            <p id="secondTester">0</p>
+        </div>
+
+        <div id="tracker">
+            <p>Wins: </p>
+            <p id="win">0</p>
+            <p>Losses: </p>
+            <p id="lose">0</p>
+        </div>
+        <button id="firstGuess" onclick="oneBtn()"></button>
+        <button id="secondGuess" onclick="twoBtn()"></button>
+        <button id="thirdGuess" onclick="threeBtn()"></button>
+        <button id="fourthGuess" onclick="fourBtn()"></button>
+    </div>                                  <!--End of the page container-->
+
+    <!--Linking javascript file-->
+    <script type="text/javascript" src="Crystal-Collector/assets/logic.js"></script>
+    
+</body>
+</html>

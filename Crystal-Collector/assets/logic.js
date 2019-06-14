@@ -2,7 +2,7 @@
 var randomT;
 
 function randomTarget(){
-    var tester = $("tester");
+    var tester = document.getElementById("tester");
     randomT = Math.floor(Math.random() * (120 - 19) + 19) + 1;
     // tester.replaceWith(randomT);
     tester.innerHTML=randomT;
@@ -22,20 +22,20 @@ function boxReset(){
 }
 
 //First button config
-var firstButton = $("firstButton");
+var firstButton = document.getElementById("firstButton");
 firstButton = {value:randomGuess()};
 //Second button config
-var secondButton = $("secondButton");
+var secondButton = document.getElementById("secondButton");
 secondButton = {value:randomGuess()};
 //Third button config
-var thirdButton = $("thirdButton");
+var thirdButton = document.getElementById("thirdButton");
 thirdButton = {value:randomGuess()};
 //Fourth button config
-var fourthButton = $("fourthButton");
+var fourthButton = document.getElementById("fourthButton");
 fourthButton = {value:randomGuess()};
 //Initial box 2 config
 var guessTotal = 0;
-var secondTester = $("secondBox");
+var secondTester = document.getElementById("secondTester");
 //Setting variables for WR and LR
 var winRate = 0;
 var lossRate = 0;
@@ -43,12 +43,12 @@ var lossRate = 0;
 //Function to increase win rate
 function increaseWinRate(){
     winRate = winRate + 1;                                  //Increase win rate by 1
-    $("win").innerHTML=winRate;                             //Display win rate
+    document.getElementById("win").innerHTML=winRate;                             //Display win rate
 }
 
 function increaseLossRate(){
     lossRate = lossRate + 1;
-    $("lose").innerHTML=lossRate;
+    document.getElementById("lose").innerHTML=lossRate;
 }
 //Config for the first button.
 function oneBtn(){
@@ -129,5 +129,5 @@ console.log(lossRate + " LR");
 console.log(firstButton.value + " 1 btn value");
 console.log(secondButton.value + " 2 btn value");
 console.log(thirdButton.value + " 3 btn value");
-console.log(fourthButton.value + "4 btn value");
+console.log(fourthButton.value + " 4 btn value");
 console.log(randomGuess());

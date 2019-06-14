@@ -101,18 +101,20 @@ while(player.health > 0 || enemy.health > 0){
     }
     //allow enemy to make selection
     enemySelect();
-
     if(enemySelect() = enemyDefend() && playerSelection === false){
         alert("Both parties defending! No damage done");
     }else if(enemySelect() = enemyAttack() && playerSelection === true){
         alert("Both parties attacking! Reduced damage!")
         bothAttack();
+        console.log("both attack: " + player.health + " " + enemy.health);
     }else if(enemySelect() = enemyAttack() && playerSelection === false){
-        alert("You've defended while the enemy attacks!")
+        alert("You've defended while the enemy attacks!");
         playerDefend();
+        console.log("Enemy attacked: "+ player.health + " " + enemy.health);
     }else if(enemySelect() = enemyDefend() && playerSelection === true){
-        alert("You've attacked while the enemy defends!")
+        alert("You've attacked while the enemy defends!");
         enemyDefend();
+        console.log("You attacked: "+ player.health + " " + enemy.health);
     }
 
     console.log(player.health);

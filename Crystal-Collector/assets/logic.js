@@ -4,7 +4,6 @@ $(document).ready(function(){
 var randomT;
 
 function randomTarget(){
-    // var tester = document.getElementById("tester");
     var tester = $("#tester");
     randomT = Math.floor(Math.random() * (120 - 19) + 19) + 1;
     tester.html(randomT);

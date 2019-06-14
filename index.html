@@ -19,7 +19,7 @@
             <h1>Crystal Collector</h1>
         </div>                              <!--End of the heading-->
 
-        <div>
+        <div id="guessText">
             <p>Number to guess:</p>
         </div>
 
@@ -28,7 +28,7 @@
         </div>
 
         <div>
-            <p>Your guess total:</p>
+            <p id="guessTotal">Your guess total:</p>
         </div>
 
         <div id="secondBox">                <!--Second box for storing the random guesses-->
@@ -41,10 +41,18 @@
             <p>Losses: </p>
             <p id="lose">0</p>
         </div>
+        <div id="buttonDiv">
         <button id="firstGuess"></button>
         <button id="secondGuess"></button>
         <button id="thirdGuess"></button>
         <button id="fourthGuess"></button>
+        </div>
+
+        <div id="gameInfo">
+            <p>Try to guess the random number by clicking on the crystal buttons!</p>
+            <br>
+            <p>The twist is that you don't know what you're guessing until you start!</p>
+        </div>
     </div>                                  <!--End of the page container-->
 
     <!--Linking javascript file-->

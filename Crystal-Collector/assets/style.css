@@ -29,3 +29,35 @@
     width: 80px;
     height: 80px;
 }
+
+#buttonDiv{
+    text-align: center;
+}
+
+#heading{
+    text-align: center;
+}
+
+#firstBox{
+    text-align: center;
+}
+
+#secondBox{
+    text-align: center;
+}
+
+#tracker{
+    text-align: center;
+}
+
+#guessText{
+    text-align: center;
+}
+
+#guessTotal{
+    text-align: center;
+}
+
+#gameInfo{
+    text-align: center;
+}

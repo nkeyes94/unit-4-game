@@ -36,28 +36,43 @@
 
 #heading{
     text-align: center;
+    color: aliceblue;
 }
 
 #firstBox{
     text-align: center;
+    color: aliceblue;
 }
 
 #secondBox{
     text-align: center;
+    color: aliceblue;
 }
 
 #tracker{
     text-align: center;
+    color: aliceblue;
 }
 
 #guessText{
     text-align: center;
+    color: aliceblue;
 }
 
 #guessTotal{
     text-align: center;
+    color: aliceblue;
 }
 
 #gameInfo{
     text-align: center;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(cave.jpg);
+}
+
+*{
+    font-family: 'Amatic SC', cursive;
 }

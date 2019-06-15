@@ -6,12 +6,19 @@
     height: 80px;
 }
 
+#firstGuess:hover{
+    box-shadow: 0 0 10px green, 0 0 10px green;
+}
+
 #secondGuess{
     background-image: url(crystal-red.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 80px;
     height: 80px;
+}
+#secondGuess:hover{
+    box-shadow: 0 0 10px red, 0 0 10px red;
 }
 
 #thirdGuess{
@@ -21,6 +28,9 @@
     width: 80px;
     height: 80px;
 }
+#thirdGuess:hover{
+    box-shadow: 0 0 10px cyan, 0 0 10px cyan;
+}
 
 #fourthGuess{
     background-image: url(crystal-purple.png);
@@ -28,6 +38,9 @@
     background-repeat: no-repeat;
     width: 80px;
     height: 80px;
+}
+#fourthGuess:hover{
+    box-shadow: 0 0 10px purple, 0 0 10px purple;
 }
 
 #buttonDiv{
